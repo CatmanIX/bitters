@@ -1,50 +1,52 @@
-Bitters
-===
+[![Bitters](http://bitters.bourbon.io/images/bitters-logo.svg)](http://bitters.bourbon.io/)
+
 Add a dash of predefined style to get your [Bourbon](http://bourbon.io) stylesheets started off in the right direction.
 
 Bitters is meant to help designers get projects started on new projects faster. It adds enough predefined structure and style to get started quickly but bland enough so that it doesn't dictate any style moving forward.
 
+
+Requirements
+===
+- Sass 3.0+
+- Bourbon 2.0+
+
 Install Instructions
 ===
-Install Bitters:
+Install [Bourbon](https://github.com/CoRD-Dev/libbourbon#install-instructions) and [Neat](https://github.com/CoRD-Dev/libneat#install-instructions) (optional).
+
+`cd` to your projects local repository and run:
 
 ```bash
-gem install Bitters
+git submodule add https://github.com/CoRD-Dev/libbitters.git sass/base
 ```
-
-Install [Bourbon](https://github.com/thoughtbot/bourbon#install-for-rails-31) and [Neat](https://github.com/thoughtbot/neat#install-instructions) (optional).
-
-Then `cd` to your Sass directory and run:
-
-```bash
-bitters install
-```
+(`sass/base` should be the directory your sass/scss files are kept +/base.)
 
 The generated folder will contain all Bitters files.
 
 Import Bitters after Bourbon and Neat in your `application.css.scss`. All additional stylesheets should be imported below Bitters:
 
 ```scss
-@import "bourbon";
-@import "neat";
-@import "bitters/bitters";
+@import "bourbon/bourbon";
+@import "neat/neat";
+@import "base/base";
 
 // All other imports
 ```
 
-We suggest using [Normalize](http://necolas.github.io/normalize.css/) for a CSS reset with Bitters.
+We suggest using [Normalize](https://github.com/CoRD-Dev/libnormalize/) for a CSS reset with Bitters.
 
 If you are using the Neat overrides found in `_grid-settings.scss`, `@import "bitters/grid-settings"` between Bourbon and Neat as directed by [Neats Documentation](https://github.com/thoughtbot/neat#getting-started).
 
 ```scss
-@import "normalize";
-@import "bourbon";
+@import "normalize/normalize";
+@import "bourbon/bourbon";
 @import "bitters/grid-settings";
-@import "neat";
-@import "bitters/bitters";
+@import "neat/neat";
+@import "base/base";
 
 // All other imports
 ```
+
 
 Getting Started
 ===
@@ -71,11 +73,6 @@ Adds basic styles all form elements. The variables at the top of the file all in
 
 ### Flashes
 Used for any error, warning or success messages in applications or forms. Specifically made for rails application notices.
-
-Requirements
-===
-- Sass 3.0+
-- Bourbon 2.0+
 
 Credits
 ===
