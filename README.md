@@ -12,7 +12,9 @@ Requirements
 
 Install Instructions
 ===
-Install [Bourbon](https://github.com/CoRD-Dev/libbourbon#install-instructions) and [Neat](https://github.com/CoRD-Dev/libneat#install-instructions) (optional).
+Install [SASS](http://sass-lang.com/) and [Bourbon](https://github.com/CoRD-Dev/libbourbon#install-instructions).
+
+(Optional) Install [Neat](https://github.com/CoRD-Dev/libneat#install-instructions).
 
 `cd` to your projects local repository and run:
 
